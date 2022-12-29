@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>index02</h2>
+  <script>
+    var num1 = "10";
+    var num2 = 10;
+    console.log(num1 == num2);  //true
+    console.log(num1 != num2);  //false
+    console.log(num1 === num2); //false
+    console.log(num1 !== num2); //true
+
+    var a;  //undefined
+    var b = null; //null
+    console.log(a, b, a==b);  //undefined null true
+    document.write(a, b, a!=b); //undefinednullfalse
+    console.log(a, b, a===b);  //undefined null false
+    document.write(a, b, a!==b); //undefinednulltrue
+
+    var bool1 = a==b ? '진실' : '거짓';  //a===b : true
+    var bool2 = a===b ? '진실' : '거짓';  //a===b : false
+    console.log(bool1); //진실
+    console.log(bool2); //거짓
+
+    var arr1 = [1, "나", "c", '&'];
+    document.write("<br>" + arr1);  //1,나,c,&
+    console.log(arr1);  //(4) [1, '나', 'c', '&'']
+    console.log(typeof arr1); //object
+
+    var arr2 = new Array(5);
+    console.log(arr2);  //(5) [empty x 5]
+    document.write("<br>" + arr2);  //,,,,
+    console.log(arr2.length); //5
+
+    var arr3 = new Array(5, '냔', 2);
+    console.log(arr3);  //(3) [5, '냔', 2]
+    document.write("<br>" + arr3);  //5,냔,2
+    console.log(arr3.length); //3
+    document.write("<br>" + arr3.length); //3
+  </script>
+</body>
+</html>
