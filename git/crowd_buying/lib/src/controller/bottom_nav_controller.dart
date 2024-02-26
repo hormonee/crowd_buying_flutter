@@ -6,7 +6,7 @@ import 'package:crowd_buying/src/view/upload.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-enum PageName { HOME, SEARCH, UPLOAD, INTEREST, MYPAGE }
+enum PageName { HOME, SEARCH, UPLOAD, BOOKMARK, MYPAGE }
 
 class BottomNavController extends GetxController {
   static BottomNavController get to => Get.find();
@@ -25,7 +25,7 @@ class BottomNavController extends GetxController {
         break;
       case PageName.HOME:
       case PageName.SEARCH:
-      case PageName.INTEREST:
+      case PageName.BOOKMARK:
       case PageName.MYPAGE:
         _changePage(value, hasGesture: hasGesture);
         break;
